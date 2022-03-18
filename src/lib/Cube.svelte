@@ -6,7 +6,7 @@
 
     onMount(() => {
         const scene = new THREE.Scene();
-        scene.background = new THREE.Color( 0xe9eff1 );
+        scene.background = new THREE.Color( 0x1e1f29 );
 
         const camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.1, 1000 );
 

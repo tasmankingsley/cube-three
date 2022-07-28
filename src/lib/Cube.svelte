@@ -24,16 +24,17 @@ onMount(() => {
     scene.add( cube );
 
     camera.position.z = 2;
-    camera.position.y = -0.2;
+    camera.position.y = 0;
+
 
     const animate = function () {
         requestAnimationFrame( animate );
 
-        cube.rotation.x += 0.02;
-        cube.rotation.y += 0.02;
+        cube.rotation.x += -0.001;
+        cube.rotation.y += 0.01;
 
-        line.rotation.x += -0.02;
-        line.rotation.y += -0.02;
+        line.rotation.x += -0.001;
+        line.rotation.y += 0.01;
 
         renderer.render( scene, camera );
     };
@@ -56,3 +57,8 @@ onMount(() => {
 </script>
 
 <div bind:this={container}/>
+
+
+<style>
+
+</style>
